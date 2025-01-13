@@ -1,10 +1,14 @@
 export const cardData = [
   {
     id: 1,
+    tag: 'Writers',
+    bgColor: '#80C8F8',
+    imageColor:'#423D7C',
+    imageURL: '/stallion-writer.png',
     sections: [
       {
-        name: "Simplify Complex Ideas",
-        description: "Break down blockchain concepts into digestible, engaging threads for diverse audiences."
+        name: 'Simplify Complex Ideas:',
+        description: 'Break down blockchain concepts into digestible, engaging threads for diverse audiences.'
       },
       {
         name: "Educate and Engage",
@@ -18,12 +22,12 @@ export const cardData = [
         name: "Drive Awareness",
         description: "Create viral-worthy threads that boost visibility for Stallion and the Stellar ecosystem."
       }
-    ],
-    tag:"Writers",
-    imageURL: "/stallion-writer.png"
+    ]
   },
   {
     id: 2,
+    bgColor: '#F88082',
+    imageColor:'#7C3D3E',
     sections: [
       {
         name: "Design Seamless Interfaces",
@@ -47,6 +51,8 @@ export const cardData = [
   },
   {
     id: 3,
+    bgColor: '#5E7F02',
+    imageColor:'#050D0B',
     sections: [
       {
         name: "Build Scalable Solutions", 
@@ -70,6 +76,8 @@ export const cardData = [
   },
   {
     id: 4,
+    bgColor: '#8082F8',
+    imageColor:'#3E3D7C',
     sections: [
       {
         name: "Craft Engaging Campaigns",

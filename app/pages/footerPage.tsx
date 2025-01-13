@@ -10,7 +10,7 @@ export default function FooterPage() {
             <div className="flex relative text-white items-center gap-2" >
                 <div className="font-[Drukwide] text-[25px]">FOLLOW US :</div>
                 <Image src='./devicon_twitter.svg' alt="twitter" width={30} height={30}/>
-                <Image src='./vector.svg' alt="twitter" width={30} height={30}/>
+                <Image src='./Vector.svg' alt="discord" width={30} height={30}/>
             </div>
         </div>
     )

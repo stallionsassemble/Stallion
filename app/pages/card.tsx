@@ -11,27 +11,34 @@ interface CardProps {
   tag: string;
   imageURL: string;
   sections: Section[];
+  bgColor: string;
+  imageColor: string;
 }
 
-const Card: React.FC<CardProps> = ({ tag, imageURL, sections }) => {
+const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColor }) => {
   return (
-    <div className="flex justify-between items-center bg-[#80C8F8] rounded-[30px] w-[70%] h-[90%]">
-      <div className="card-tag">{tag}</div>
+    <div className="flex justify-between gap-4 items-center  text-white rounded-[30px] w-[75%] h-[600px]"  style={{ backgroundColor: bgColor }}>
 
-      <div className='p-[20px] '>
-        <div className=''>Consider yourself a stallion. If You</div>
+      <div className="w-[10%] text-center flex items-center ">
+        <span className='transform -rotate-90 font-[Drukwide] uppercase text-[15px]'>{tag}</span>
+     </div>
+
+      <div className='p-[20px] flex flex-col w-full'>
+        <div className='font-[Drukwide] text-[25px] pb-2'>Consider yourself a stallion. If You</div>
         
-        <div className="card-sections">
+        <div className="">
             {sections.map((section, index) => (
-            <div key={index} className="flex flex-col gap-2">
-                <span className='text-lg'>{section.name}</span>
-                <span className='text-sm'>{section.description}</span>
+            <div key={index} className="flex flex-col pb-4 border-b-[1px] border-white">
+                <span className='text-[18px] font-[700] pt-4'>{section.name}</span>
+                <span className='text-[15px]'>{section.description}</span> 
             </div>
             ))}
         </div>
       </div>
 
-      <Image src={imageURL} alt={tag} width={500} height={700} className="bg-[#423D7C]" />
+      <div className="flex h-full rounded-r-[30px] w-full h-full flex justify-center items-center" style={{ backgroundColor: imageColor }}>
+        <Image src={imageURL} alt={tag} width={500} height={700} />
+      </div>
     </div>
   );
 };
@@ -43,6 +50,8 @@ const CardList: React.FC = () => {
         <Card
           key={card.id}
           tag={card.tag}
+          bgColor={card.bgColor}
+          imageColor={card.imageColor}
           imageURL={card.imageURL}
           sections={card.sections}
         />
