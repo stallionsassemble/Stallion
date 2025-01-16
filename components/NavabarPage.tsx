@@ -6,6 +6,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  NavbarContent,
   Link,
 } from "@nextui-org/react";
 import { Button } from "@/components/UI/button";
@@ -29,13 +30,13 @@ export default function NavbarPage() {
   
     >
 
-      <div className="flex gap-6 items-center">
+      <NavbarContent className="flex gap-6 items-center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden flex" 
         />
           <p>STALLION</p>
-      </div>
+      </NavbarContent>
 
       <div className="flex flex gap-4 items-center uppercase max-sm:hidden">
         <div>Home</div>
