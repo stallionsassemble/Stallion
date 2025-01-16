@@ -71,7 +71,7 @@ export const cardData = [
         description: "Share your code and ideas to strengthen the global developer community."
       },
     ],
-    tag:"Web3 Developer",
+    tag:"Developer",
     imageURL: "/stallion-developer.png"
   },
   {
