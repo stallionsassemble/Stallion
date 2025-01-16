@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
         
         <div className="">
           {sections.map((section, index) => (
-            <div key={index} className="flex flex-col pb-4 border-b-[1px] border-white">
+            <div key={index} className="flex flex-col pb-2 border-b-[1px] border-white">
               <span className='text-[18px] font-[700] pt-4'>{section.name}</span>
               <span className='text-[15px]'>{section.description}</span> 
             </div>
@@ -53,8 +53,8 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
 
 const CardList: React.FC = () => {
   return (
-    <div className="pt-60 px-20 flex justify-center  items-center">
-      <div className="relative ml-40" style={{ height: '110vh', width: '100%', maxWidth: '1400px' }}>
+    <div className=" px-20 flex justify-center  items-center">
+      <div className="relative ml-40" style={{ height: '600px', width: '100%', maxWidth: '1400px' }}>
         {cardData.map((card, index) => (
           <div
             key={card.id}

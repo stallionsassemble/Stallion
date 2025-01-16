@@ -1,7 +1,7 @@
 import HeroPage from "./pages/heropage";
 import BuiltPage from "./pages/builtpage";
 import AssemblePage from "./pages/assemble";
-// import Card from "./pages/card";
+import CardSection from "./pages/cardsSection";
 import HowItWorks from "./pages/howItworks";
 import FooterPage from "./pages/footerPage";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <div className="font-[Inter]">
         <HeroPage />
         <BuiltPage />
-        {/* <Card />  */}
+        <CardSection />
         <AssemblePage />
         <HowItWorks />
         <FooterPage />

@@ -25,6 +25,11 @@ export default {
 			  to: { transform: "translateX(-50%)" },
 			},
 		  },
+		  screens: {
+			'2lg': '1400px', 
+			'1lg': '1200px',  
+			'800': '800px', // This adds a new breakpoint at 1350px
+		  },
 
   		colors: {
   			background: 'hsl(var(--background))',

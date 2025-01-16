@@ -3,8 +3,8 @@ import Assemblepage from './assemble';
 
 export default function FooterPage() {
     return(
-        <div className="bg-[#000000]  relative flex  flex-col h-80 py-48 max-sm:py-32 mt-40 max-sm:mt-20 items-center w-full justify-center ">
-            <div className="absolute -top-64 max-sm:-top-12 z-10">
+        <div className="bg-[#000000]  relative flex  flex-col h-80 py-48 max-sm:py-32 mt-40 max-lg:mt-20 items-center w-full justify-center ">
+            <div className="absolute -top-64 max-sm:-top-12 max-lg:-top-60 z-10">
                 <Assemblepage />
             </div>
             <div className="flex relative text-white items-center gap-2" >
