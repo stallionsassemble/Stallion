@@ -30,10 +30,10 @@ export default function NavbarPage() {
   
     >
 
-      <NavbarContent className="flex gap-6 items-center">
+      <NavbarContent className="flex items-center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden flex" 
+          className="sm:hidden flex w-60 w-4 px-8 bg-red-900" 
         />
           <p>STALLION</p>
       </NavbarContent>
