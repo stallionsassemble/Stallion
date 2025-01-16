@@ -12,10 +12,10 @@ export default function BuiltPage() {
                     Together we’re shaping the future of Web3.
                 </div>
 
-                <Button variant="stallion" className="max-sm:px-8 md:hidden">Join Waitlist</Button>
+                <Button variant="stallion" className="max-sm:px-8  800:hidden">Join Waitlist</Button>
             </div>
 
-            <div className="relative max-sm:hidden">
+            <div className="relative max-800:hidden">
                 <div className=" justify-around gap-32 flex items-center">
                     <Image src="/stalliuon2.png" alt="stallion2" width={400} height={600} className="max-lg:w-1/2" />
                     <Button variant="stallion" className="px-16 max-sm:px-8 flex-end absolute top-[20%] ">Join Waitlist</Button>

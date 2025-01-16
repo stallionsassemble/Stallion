@@ -28,7 +28,8 @@ export default {
 		  screens: {
 			'2lg': '1400px', 
 			'1lg': '1200px',  
-			'800': '800px', // This adds a new breakpoint at 1350px
+			'800': '820px', 
+			// This adds a new breakpoint at 1350px
 		  },
 
   		colors: {
