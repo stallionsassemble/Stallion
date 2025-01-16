@@ -33,7 +33,7 @@ export default function NavbarPage() {
       <NavbarContent className="flex items-center">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden flex w-60 w-4 px-8 bg-red-900" 
+          className="sm:hidden flex w-60 w-4 px-8" 
         />
           <p>STALLION</p>
       </NavbarContent>
