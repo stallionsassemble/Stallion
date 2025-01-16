@@ -30,24 +30,25 @@ export default function NavbarPage() {
   
     >
 
-      <NavbarContent className="flex items-center">
+      <NavbarContent className="flex-start items-center" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden flex w-60 w-4 px-8" 
+          className="sm:hidden flex  px-8" 
         />
           <p>STALLION</p>
       </NavbarContent>
 
-      <div className="flex flex gap-4 items-center uppercase max-sm:hidden">
+      <NavbarContent className="flex flex gap-4 items-center uppercase max-sm:hidden" justify="start">
         <div>Home</div>
         <div>How It Works</div>
         <div>Built for you</div>
-      </div>
+      </NavbarContent>
 
+      <NavbarContent justify="end" >
+        <Button variant="stallion" className="">Join Us</Button>
+      </NavbarContent>
       
-      <Button variant="stallion" className="">Join Us</Button>
-      
-      <NavbarMenu className="flex text-white gap-6">
+      <NavbarMenu className="flex text-white gap-6" >
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
