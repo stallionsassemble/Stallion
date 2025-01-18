@@ -61,7 +61,7 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
 
 const CardList: React.FC = () => {
   return (
-      <Carousel className="w-full max-w-6xl">
+      <Carousel className="w-full">
         <CarouselContent className='w-full'>
         {cardData.map((card, index) => (
           <CarouselItem className='flex flex-col items-center justify-center '

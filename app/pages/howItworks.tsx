@@ -28,7 +28,7 @@ interface Section {
 
 const HowList: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-12 gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32">
+    <div className="flex flex-col items-center px-12 pt-40 gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32">
 
         <div className="font-[Drukwide] font-500  uppercase text-[65px] text-[#37474F] max-sm:text-[25px]  max-2lg:text-[50px]">How It works</div>
 
