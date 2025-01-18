@@ -29,6 +29,7 @@ export default {
 			'2lg': '1400px', 
 			'1lg': '1200px',  
 			'800': '820px', 
+			'1md': '1080px',
 			// This adds a new breakpoint at 1350px
 		  },
 
