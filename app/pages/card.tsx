@@ -1,6 +1,14 @@
 import React from 'react';
 import { cardData } from '../../lib/data';
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/UI/carousel"
+ 
 
 interface Section {
   name: string;
@@ -27,7 +35,7 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
         ...style
       }}
     >
-      <div className="w-[10%] text-center flex items-center">
+      <div className=" text-center w-[10%] flex items-center ">
         <span className='transform -rotate-90 font-[Drukwide] uppercase text-[15px]'>{tag}</span>
       </div>
 
@@ -53,19 +61,11 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
 
 const CardList: React.FC = () => {
   return (
-    <div className=" px-20 flex justify-center  items-center">
-      <div className="relative ml-40" style={{ height: '600px', width: '100%', maxWidth: '1400px' }}>
+      <Carousel className="w-full max-w-6xl">
+        <CarouselContent className='w-full'>
         {cardData.map((card, index) => (
-          <div
-            key={card.id}
-            className="absolute w-full transition-all duration-300"
-            style={{
-              right: `${index * 80}px`,
-              zIndex: cardData.length - index,
-              display: 'flex',
-              justifyContent: 'center'
-            }}
-          >
+          <CarouselItem className='flex flex-col items-center justify-center '
+            key={index}>
             <Card
               tag={card.tag}
               bgColor={card.bgColor}
@@ -76,10 +76,13 @@ const CardList: React.FC = () => {
                 
               }}
             />
-          </div>
+          </CarouselItem>
         ))}
-      </div>
-    </div>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+ 
   );
 };
 
