@@ -1,7 +1,7 @@
 export const cardData = [
   {
     id: 1,
-    tag: 'Writers',
+    tag: 'Writer',
     bgColor: '#80C8F8',
     imageColor:'#423D7C',
     imageURL: '/stallion-writer.png',
@@ -107,16 +107,16 @@ export const cardData = [
     title:"APPLY BOUNTY",
     sections: [
       {
-        name: "Build Scalable Solutions", 
-        description: "Develop cutting-edge applications and tools that empower users in emerging regions."
+        name: "Discover Opportunities", 
+        description: "Browse a curated list of active bounties that match your expertise and interests."
       },
       {
-        name: "Enhance the Ecosystem",
-        description: "Create integrations and features that expand the capabilities of the Stellar network."
+        name: "Select Your Role",
+        description: "Choose how you want to contribute developer, designer, content creator, or any role that fits the bounty requirements"
       },
       {
-        name: "Collaborate on Projects",
-        description: "Join forces with creatives and operators to bring visionary ideas to life."
+        name: "Read Through the Deliverable Guidelines",
+        description: "Carefully review the expectations, timelines,and submission criteria to ensure clarity on what’s required."
       },
     ],
   },
@@ -125,16 +125,16 @@ export const cardData = [
     title:"SUBMISSION",
     sections: [
       {
-        name: "Build Scalable Solutions", 
-        description: "Develop cutting-edge applications and tools that empower users in emerging regions."
+        name: "Start Strong", 
+        description: "Kick off your work by aligning with the deliverable guidelines and milestones."
       },
       {
-        name: "Enhance the Ecosystem",
-        description: "Create integrations and features that expand the capabilities of the Stellar network."
+        name: "Collaborate and Communicate",
+        description: "Stay in touch with the project team for feedback and support throughout the process"
       },
       {
-        name: "Collaborate on Projects",
-        description: "Join forces with creatives and operators to bring visionary ideas to life."
+        name: "Deliver Your Best",
+        description: "Submit high-quality work that meets or exceeds the outlined expectations."
       },
     ],
   },
@@ -143,17 +143,10 @@ export const cardData = [
     title:"Get Paid",
     sections: [
       {
-        name: "Craft Engaging Campaigns",
-        description: "Design compelling content strategies to spotlight emerging projects and initiatives."
+        name: "Earn rewards seamlessly for your contributions.",
+        description: "Once your submission is approved, your payment will be processed in stablecoins like USDC. Your earnings are sent directly toyour Stellar wallet, ensuring fast, secure, and transparent transactions. It’s that simple—complete bounties, get paid, and grow with Stallion"
       },
-      {
-        name: "Educate and Inspire", 
-        description: "Create informative articles, videos, and tutorials to onboard newcomers to the Stellar blockchain."
-      },
-      {
-        name: "Amplify Voices",
-        description: "Share success stories and amplify the reach of community-driven innovations."
-      },
+      
     ],
   },
  ]  

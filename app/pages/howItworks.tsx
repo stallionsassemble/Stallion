@@ -28,7 +28,7 @@ interface Section {
 
 const HowList: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-12 pt-40 gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32">
+    <div className="flex flex-col items-center px-12  gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32">
 
         <div className="font-[Drukwide] font-500  uppercase text-[65px] text-[#37474F] max-sm:text-[25px]  max-2lg:text-[50px]">How It works</div>
 
@@ -40,7 +40,7 @@ const HowList: React.FC = () => {
         <div className="flex flex-col gap-40 max-sm:gap-12 max-2lg:gap-24 relative">
             <div className="flex items-center justify-center 2lg:mb-32  gap-20 flex-col">
                 <span className="bg-[#D6D7FA] rounded-[25px] text-[#37474F] font-[Drukwide] text-[32px] px-72 z-10 max-sm:px-8 max-2lg:px-32 text-center py-6 max-2lg:text-[25px]  max-sm:text-[15px]">LIST BOUNTIES</span>
-                <div className="border-4 transform rotate-90 border-[#00000033] w-[16%]  max-2lg:hidden"></div>
+                <div className="border-4 transform rotate-90 border-[#00000033] w-[20%]  max-2lg:hidden"></div>
             </div>
 
             <div className="flex gap-12 max-2lg:flex-col ">
