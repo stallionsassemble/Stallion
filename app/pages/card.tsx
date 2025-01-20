@@ -61,7 +61,7 @@ const Card: React.FC<CardProps> = ({ tag, imageURL, sections, imageColor, bgColo
 
 const CardList: React.FC = () => {
   return (
-      <Carousel className="w-full pb-10">
+      <Carousel className="pb-10">
         <CarouselContent className='w-full'>
         {cardData.map((card, index) => (
           <CarouselItem className='flex flex-col items-center justify-center '
@@ -72,9 +72,6 @@ const CardList: React.FC = () => {
               imageColor={card.imageColor}
               imageURL={card.imageURL}
               sections={card.sections}
-              style={{
-                
-              }}
             />
           </CarouselItem>
         ))}

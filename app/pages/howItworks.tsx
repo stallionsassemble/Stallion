@@ -57,7 +57,7 @@ const HowList: React.FC = () => {
         </div>
 
         <div>
-            <Button variant="stallion" className="px-28 py-6 text-[9px] max-sm:px-8">Join Waitlist</Button>
+            <Button variant="stallion" className="px-28 py-6 text-[10px] max-sm:px-8">Join Waitlist</Button>
         </div>
     </div>
   );

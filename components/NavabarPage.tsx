@@ -23,13 +23,15 @@ export default function NavbarPage() {
 
   return (
     <Navbar 
-      onMenuOpenChange={setIsMenuOpen}
-      className="bg-transparent border-none shadow-none md:px-16 max-800:px-6 text-[18px]  lg:py-8 font-[BebasNeue]"
-      classNames={{ wrapper: "px-0" }}
+      onMenuOpenChange={setIsMenuOpen} position="static"
+      className="bg-transparent  border-none shadow-none lg:px-24 md:px-16 max-800:px-6 text-[18px]  lg:py-8 font-[BebasNeue]"
       isBlurred={false}
+      classNames={{
+        wrapper: "max-w-full", // This removes the max-w-1024 and padding
+        base: "max-w-full",        // This ensures the base container is full width
+      }}
   
     >
-
       <NavbarContent className="flex-start items-center" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -38,7 +40,7 @@ export default function NavbarPage() {
           <p>STALLION</p>
       </NavbarContent>
 
-      <NavbarContent className="flex flex gap-4 items-center uppercase max-800:hidden" justify="start">
+      <NavbarContent className="flex flex gap-4 items-center uppercase max-800:hidden" justify="center">
         <div>Home</div>
         <div>How It Works</div>
         <div>Built for you</div>
