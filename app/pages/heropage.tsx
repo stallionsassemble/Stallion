@@ -1,9 +1,10 @@
 import { Button } from "@/components/UI/button"
 import NavbarPage from "@/components/NavabarPage"
+import Link from "next/link"
 
 export default function HeroPage () {
     return(
-        <main className="bg-[url('/hero-Image.png')]  bg-auto bg-no-repeat bg-cover h-screen w-full">
+        <main className="bg-[url('/hero-Image.png')]  bg-auto bg-no-repeat bg-cover h-screen w-full flex flex-col items-center justify-center">
             <NavbarPage/>
             <div className="flex flex-col items-center justify-center gap-4 max-sm:gap-8 h-full text-center">
                 <div className="font-[Drukwide] text-[#37474F] text-[90px]  font-[900] px-20 max-sm:px-2 max-lg:px-10 max-sm:text-[25px] max-lg:text-[50px] max-2lg:text-[70px] max-1lg:text-[60px] max-800:text-[40px]">STALLION’S REALM</div>
@@ -13,8 +14,10 @@ export default function HeroPage () {
                     <p>Join a global cooperative driving financial inclusion and blockchain innovation on the Stellar network. 
                     Your journey starts here—build, launch, and thrive with Stallion.</p>
                 </div>
-
-                <Button variant="stallion" className="px-16 max-sm:px-8">Join Waitlist</Button>
+                
+                <Link href="https://tally.so/r/mKvyzV" target="_blank" rel="noopener noreferrer">
+                    <Button variant="stallion" className="px-16 max-sm:px-8">Join Waitlist</Button>
+                </Link>
             </div>
         </main>
     )

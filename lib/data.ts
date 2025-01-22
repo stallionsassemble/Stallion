@@ -46,7 +46,7 @@ export const cardData = [
         description: "Optimise workflows and interactions to ensure products are delightful and impactful."
       }
     ],
-    tag:"UI/UX DESIGNER",
+    tag:"DESIGNER",
     imageURL: "/stallion-designer.png"
   },
   {

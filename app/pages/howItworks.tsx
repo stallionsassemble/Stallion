@@ -1,6 +1,6 @@
 import { Button } from "@/components/UI/button"
 import { howData } from "@/lib/data";
-
+import Link from "next/link";
 interface Section {
     name: string;
     description: string;
@@ -28,7 +28,7 @@ interface Section {
 
 const HowList: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-12  gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32">
+    <div className="flex flex-col items-center px-12  gap-20 max-sm:gap-12 pb-60 max-800:px-8 max-sm:pb-32 max-800:pt-20 pt-40">
 
         <div className="font-[Drukwide] font-500  uppercase text-[65px] text-[#37474F] max-sm:text-[25px]  max-2lg:text-[50px]">How It works</div>
 
@@ -56,9 +56,9 @@ const HowList: React.FC = () => {
             <div className="border-8 border-b-0 border-[#00000033] w-[70%] absolute translate-x-[20%] top-1/4  max-2lg:hidden h-56 rounded-[40px] "></div>
         </div>
 
-        <div>
+        <Link href="https://tally.so/r/mKvyzV" target="_blank" rel="noopener noreferrer">
             <Button variant="stallion" className="px-28 py-6 text-[10px] max-sm:px-8">Join Waitlist</Button>
-        </div>
+        </Link>
     </div>
   );
 };

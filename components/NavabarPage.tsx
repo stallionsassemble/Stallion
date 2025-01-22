@@ -24,7 +24,7 @@ export default function NavbarPage() {
   return (
     <Navbar 
       onMenuOpenChange={setIsMenuOpen} position="static"
-      className="bg-transparent  border-none shadow-none lg:px-24 md:px-16 max-800:px-6 text-[18px]  lg:py-8 font-[BebasNeue]"
+      className="bg-transparent  border-none shadow-none lg:px-24 md:px-16  text-[18px]  max-lg:pt-4 lg:pt-8 font-[BebasNeue]"
       isBlurred={false}
       classNames={{
         wrapper: "max-w-full", // This removes the max-w-1024 and padding
@@ -47,7 +47,9 @@ export default function NavbarPage() {
       </NavbarContent>
 
       <NavbarContent justify="end" >
-        <Button variant="stallion" className="">Join Us</Button>
+        <Link href="https://tally.so/r/mKvyzV" target="_blank" rel="noopener noreferrer">
+          <Button variant="stallion" className="">Join Us</Button>
+        </Link>
       </NavbarContent>
       
       <NavbarMenu className="flex text-white gap-6" >
