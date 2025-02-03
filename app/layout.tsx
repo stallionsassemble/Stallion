@@ -17,6 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>{`
+          * {
+            color-scheme: light;
+            -webkit-text-fill-color: currentColor;
+          }
+        `}</style>
+      </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>
       </body>

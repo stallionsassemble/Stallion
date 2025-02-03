@@ -27,8 +27,8 @@ export default function NavbarPage() {
       className="bg-transparent  border-none shadow-none lg:px-24 md:px-16  text-[18px]  max-lg:pt-4 lg:pt-8 font-[BebasNeue]"
       isBlurred={false}
       classNames={{
-        wrapper: "max-w-full", // This removes the max-w-1024 and padding
-        base: "max-w-full",        // This ensures the base container is full width
+        wrapper: "max-w-full", 
+        base: "max-w-full",      
       }}
   
     >

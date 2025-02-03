@@ -7,8 +7,8 @@ export default function Page() {
           <div className="flex w-max animate-marquee whitespace-nowrap [--duration:12s] hover:[animation-play-state:paused]">
             {[...Array(4)].map((_, index) => (
               <div key={index} className="px-8 ">
-                <div className="font-[Drukwide] flex  items-center font-bold text-[#0000004D] text-[110px] max-sm:text-[50px] max-lg:text-[80px]">
-                   <span className="">ASSEMBLE STALLIONS</span>
+                <div className="font-[Drukwide] flex  items-center font-bold text-[#000004D] text-[110px] max-sm:text-[50px] max-lg:text-[80px]">
+                   <span className="text-[#0000004D]">ASSEMBLE STALLIONS</span>
                    <Image src="/mush.png" alt="stallion1" className="pr-28" width={500} height={500} />
                 </div>
               </div>
