@@ -39,6 +39,7 @@ The application will automatically reload if you make changes to the source file
 
 - [Next.js](https://nextjs.org/) - The React framework for production
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- Tailwind CSS - A utility-first CSS framework
 - [npm](https://www.npmjs.com/) - Package Manager
 
 
